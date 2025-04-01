@@ -3,30 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>랜덤 문구</title>
-    <style>
-        body {
-            text-align: center;
-            font-size: 2rem;
-            margin-top: 20%;
-        }
-    </style>
+    <title>비트코인 시세 예측</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <p id="message">🔮 마법의 NFC가 말하길... 🔮</p>
-    <button onclick="showRandomMessage()">눌러서 확인하기</button>
-
-    <script>
-        function showRandomMessage() {
-            const messages = [
-                "기다려 보세요.",
-                "안 돼요!",
-                "한 번 더 해보세요.",
-                "좋은 생각이에요!",
-                "다시 시도해보세요."
-            ];
-            document.getElementById("message").innerText = messages[Math.floor(Math.random() * messages.length)];
-        }
-    </script>
+    <div class="container">
+        <h1>📈 비트코인 시세 예측</h1>
+        <p>현재 가격과 예측된 가격을 확인하세요.</p>
+        <button id="fetchData">시세 가져오기</button>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
