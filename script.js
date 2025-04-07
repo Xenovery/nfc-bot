@@ -3,7 +3,7 @@ document.getElementById("fetchData").addEventListener("click", async () => {
     resultDiv.innerHTML = "데이터를 불러오는 중...";
 
     try {
-        // 예제 API (실제 비트코인 예측 API로 변경해야 함)
+        // 예제 API (실제 비트코인 예측 API로 변경해야 함
         const response = await fetch("https://api.coinpaprika.com/v1/tickers/btc-bitcoin");
         const data = await response.json();
         
