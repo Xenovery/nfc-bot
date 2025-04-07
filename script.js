@@ -8,7 +8,7 @@ document.getElementById("fetchData").addEventListener("click", async () => {
         const data = await response.json();
         
         // 현재 비트코인 가격 가져오기
-        const price = data.quotes.usd.price;
+        const price = data.quotes.USD.price;
         resultDiv.innerHTML = `<strong>현재 비트코인 가격:</strong> $${price}`;
         
     } catch (error) {
